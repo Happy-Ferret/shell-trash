@@ -1,0 +1,122 @@
+/**
+ * Webian Shell Style Sheet.
+*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-size: 10px;
+}
+
+body {
+  font-family: Helvetica, Sans-serif;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+body.home {
+  background-image: radial-gradient(closest-side, #434343 0%, #000 100%);
+}
+
+/* Prevent dotted outlines on buttons */
+button::-moz-focus-inner {
+  border: 0;
+}
+
+/* Window Manager */
+
+#windows {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* System Toolbar */
+#system-toolbar {
+  display: flex;
+  width: 100%;
+  height: 3.2rem;
+  margin: 0;
+  padding: 0;
+  color: #aaa;
+}
+
+#window-controls {
+  height: 3.2rem;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+#window-switcher {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  height: 3.2rem;
+  width: auto;
+  float: left;
+}
+
+.window-selector {
+  width: 3.2rem;
+  height: 3rem;
+  background-color: transparent;
+  background-image: url("../images/browser-icon.png");
+  background-size: 2.4rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: none;
+  margin: 0 0.2rem;
+  padding: 0;
+  border-bottom: solid 2px transparent;
+}
+
+.window-selector:hover {
+  border-bottom: solid 2px rgba(255, 255, 255, 0.6);
+}
+
+.window-selector:active {
+  border-bottom: solid 2px #fff;
+}
+
+.window-selector.selected {
+  border-bottom: solid 2px rgba(255, 255, 255, 0.9);
+}
+
+.window-selector.home-button {
+  background-image: url("../images/home.png");
+}
+
+#new-window-button {
+  float: left;
+  height: 3.2rem;
+  width: 3.2rem;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  background-image: url("../images/new.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+#new-window-button:hover {
+  opacity: 0.75;
+}
+
+#new-window-button:active {
+  opacity: 1;
+}
+
+#clock {
+  font-size: 1.3rem;
+  line-height: 3.2rem;
+  padding: 0 1rem;
+  user-select: none;
+  -moz-user-select: none;
+  color: #fff;
+}

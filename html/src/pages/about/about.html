@@ -1,0 +1,11 @@
+<ion-header>
+  <form class="urlForm" (ngSubmit)="submit()"><input
+  [(ngModel)]="url" name="url" type="text"></form>
+</ion-header>
+
+<ion-content padding>
+<iframe src="https://google.com" width="100%" height="100%" mozbrowser remote id="browser"></iframe>
+<button (click)="reload($event)">
+  Reload
+</button>
+</ion-content>

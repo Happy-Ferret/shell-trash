@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!--
+ Webian Shell content
+ http://webian.org
+
+ Copyright Ben Francis 2013
+
+ Webian Shell is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ Webian Shell is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with Webian Shell in the LICENSE file. If not, see
+ <http://www.gnu.org/licenses/>.
+-->
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Webian Shell</title>
+    <link rel="stylesheet" href="css/shell.css" type="text/css" />
+    <link rel="stylesheet" href="css/window.css" type="text/css" />
+    <script type="text/javascript" src="js/Shell.js"></script>
+    <script type="text/javascript" src="js/Places.js"></script>
+    <script type="text/javascript" src="js/Site.js"></script>
+    <script type="text/javascript" src="js/SystemToolbar.js"></script>
+    <script type="text/javascript" src="js/WindowManager.js"></script>
+    <script type="text/javascript" src="js/BaseWindow.js"></script>
+    <script type="text/javascript" src="js/HomeScreenWindow.js"></script>
+    <script type="text/javascript" src="js/BrowserWindow.js"></script>
+    <script type="text/javascript" src="js/StandaloneWindow.js"></script>
+    <script type="text/javascript" src="js/WindowSelector.js"></script>
+    <script type="text/javascript" src="js/BrowserTab.js"></script>
+  </head>
+
+  <body role="application" class="home">
+    <div id="windows" class="hidden"></div>
+    <menu type="toolbar" id="system-toolbar">
+      <menu type="toolbar" id="window-controls">
+        <menu type="toolbar" id="window-switcher"></menu>
+        <button type="button" id="new-window-button"></button>
+      </menu>
+      <span id="clock"></span>
+    </menu>
+  </body>
+
+</html>
